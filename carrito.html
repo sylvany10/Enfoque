@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/css/carrito.css">
+    <title>Carrito de compras</title>
+</head>
+    
+<body>
+    <h2 class="h2"><img src="imagenes/shopping-cart_8402978.png" alt="carrito" width="30px" height="30px"> Carrito de
+        Compras</h2>
+
+    <div id="productos">
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg1.jpg" alt="jarro" />
+            <p>Jarro personalizado</p>
+            <button id="botonJarro">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg2.jpg" alt="sombrero" />
+            <p>Sombrero Panamá hat con caja de madera</p>
+            <button id="botonSombrero">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg3.jpg" alt="roll-up" />
+            <p>Roll Up</p>
+            <button id="botonRollup">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg4.jpg" alt="cargador" />
+            <p>Cargador portátil waireless</p>
+            <button id="botonCargador">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg5.jpg" alt="agenda" />
+            <p>Agenda personalizada 100 hojas</p>
+            <button id="botonAgenda">Agregar</button>
+        </div>
+
+        <div class="producto">
+            <img src="/imagenes/productos promocjpg6.jpg" alt="audífonos" />
+            <p>Audífonos inalámbricos personalizados</p>
+            <button id="botonAudifonos">Agregar</button>
+        </div>
+
+        <h2 class="h2"></h2>
+        
+        
+        <div id="contenedor-carrito">
+            <ul id="carrito"></ul>
+            <p class="ptotal" id="totalCompra">Total: $0.00</p>
+        </div>
+        <!-- Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+        <script src="/js/js/carrito.js"></script>
+
+</body>
+
+</html>
