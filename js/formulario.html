@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2 class="h2">Formulario de Registro</h2>
+    <div class="contenedor">
+    <form action="#" id="formRegistro" onsubmit="return validarFormulario()">
+        <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="nombre">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required placeholder="apellido">
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="09[0-9]{8}"
+                title="Ingrese un número que comience con 09 y luego tenga 10 dígitos" placeholder="Ej: 0991234567"
+                required>
+        </div>
+        <br>
+        <div>
+            <label for="direccion">Direccción:</label>
+            <input type="text" id="direccion" name="direccion" required placeholder="direccion">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required title="Ingrese un correo válido" placeholder="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password">
+        </div>
+        <br>
+        <div>
+            <label for="confirmar-password">Confirmar Password</label>
+            <input type="password" id="confirmar-password" name="confirmar-password" placeholder="confirmar password">
+        </div>
+        <br>
+        <input class="button" type="submit" value="Registrarse">
+    </form>
+    </div>
+    <hr>
+
+   
+
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
